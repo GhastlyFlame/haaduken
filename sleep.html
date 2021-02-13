@@ -23,9 +23,40 @@
                 text-decoration: none;
         }
 
+		.topnav {
+	overflow: hidden;
+	background-color: black;
+	}
+
+	.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	}
+
+	.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+	}
+
+	.topnav a.active {
+	background-color: #4CAF50;
+	color: white;
+	}
+
 </style>
 </head>
 <body>
+	<div class="topnav">
+		<a href="/homepage.html">Home</a>
+		<a href="/callInfo.html">Calls</a>
+		<a href="/quotes.html">Quotes</a>
+		<a href="/myMusic.html">Music</a>
+		<a href="/memes.html">Memes</a>
+	</div>
 	<script src="https://apis.google.com/js/api.js"></script>
 	<script>
 		  /**
@@ -65,5 +96,4 @@
 	<button onclick="execute()">execute</button>
 
 
-	<a href="/homepage.html">Back</a>
 </body>
