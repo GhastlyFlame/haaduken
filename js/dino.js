@@ -148,7 +148,7 @@ Game.prototype.update = function () {
             {
                 // COLLISION OCCURED
                 this.paused = true;
-                var message = "Game Over! \nRefresh to try again!\n Your score was: " + this.score;
+                var message = "Game Over! \nClick Dino Game again to replay\n Your score was: " + this.score;
                 alert(message);
             }
             this.noOfFrames++;
