@@ -147,8 +147,9 @@ Game.prototype.update = function () {
             && leftWall(this.dino) <= rightWall(this.cacti[i]) && bottomWall(this.dino) >= topWall(this.cacti[i]))
             {
                 // COLLISION OCCURED
-                alert("Game Over! \nRefresh to try again!");
                 this.paused = true;
+                var message = "Game Over! \nRefresh to try again!\n Your score was: " + this.score;
+                alert(message);
             }
             this.noOfFrames++;
             this.score = Math.floor(this.noOfFrames/10);
