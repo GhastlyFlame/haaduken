@@ -121,6 +121,11 @@ Game.prototype.update = function () {
         this.cacti.shift();
     }
 
+    //speeds the game up as you get further
+    if(this.score % 100 == 0){
+        this.runSpeed = this.runSpeed-5;
+    }
+
     // Spawning new cacti
     //Case 1: There are no cacti on the screen
     if(this.cacti.length == 0){
