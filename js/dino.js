@@ -94,6 +94,7 @@ function Game () {
     this.runSpeed = -9;
     this.paused = false;
     this.noOfFrames = 0;
+    this.lastFrameUpdate = 0;
 }
 
 Game.prototype.spawnCactus = function(probability)
@@ -106,7 +107,6 @@ Game.prototype.spawnCactus = function(probability)
 
 Game.prototype.update = function () {
     // Dinosaur jump start
-    var lastFrameUpdate = 0;
 
     if(this.paused){
         return;
@@ -123,11 +123,11 @@ Game.prototype.update = function () {
         this.cacti.shift();
     }
 
-    //speeds the game up as you get further
-    if(this.score % 100 == 0 && this.score >= 100 && lastFrameUpdate + 20 < this.noOfFrames){
-        this.runSpeed = this.runSpeed-1;
-        lastFrameUpdate = this.noOfFrames;
-    }
+    // //speeds the game up as you get further
+    // if(this.score % 100 == 0 && this.score >= 100 && lastFrameUpdate + 200 < this.noOfFrames){
+    //     this.runSpeed = this.runSpeed-1;
+    //     lastFrameUpdate = this.noOfFrames;
+    // }
 
     // Spawning new cacti
     //Case 1: There are no cacti on the screen
