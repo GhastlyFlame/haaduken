@@ -113,6 +113,7 @@ Game.prototype.update = function () {
     }
     if (document.spacePressed == true && bottomWall(this.dino) >= topWall(this.divider)) {
         console.log("Conditions met");
+        console.log(this.runSpeed);
         this.dino.jump();
     }
     this.dino.update(this.divider, this.gravity);
