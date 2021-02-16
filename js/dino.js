@@ -91,7 +91,7 @@ function Game () {
     this.dino = new Dinosaur(Math.floor(0.1 * this.width), this.divider.y);
     this.cacti = [];
 
-    this.runSpeed = -10;
+    this.runSpeed = -9;
     this.paused = false;
     this.noOfFrames = 0;
 }
@@ -106,6 +106,7 @@ Game.prototype.spawnCactus = function(probability)
 
 Game.prototype.update = function () {
     // Dinosaur jump start
+    var lastFrameUpdate = 0;
 
     if(this.paused){
         return;
@@ -122,8 +123,9 @@ Game.prototype.update = function () {
     }
 
     //speeds the game up as you get further
-    if(this.score % 100 == 0){
-        this.runSpeed = this.runSpeed-5;
+    if(this.score % 100 == 0 && this.score >= 100 && lastFrameUpdate + 20 < this.noOfFrames){
+        this.runSpeed = this.runSpeed-1;
+        lastFrameUpdate = this.noOfFrames;
     }
 
     // Spawning new cacti
