@@ -123,14 +123,14 @@ Game.prototype.update = function () {
         this.cacti.shift();
     }
 
-    // //speeds the game up as you get further
-    // if(this.score % 100 == 0 && this.score >= 100 && lastFrameUpdate + 200 < this.noOfFrames){
-    //     this.runSpeed = this.runSpeed-1;
-    //     lastFrameUpdate = this.noOfFrames;
-    // }
+    // Speeds the game up as you get further
+    if(this.score % 100 == 0 && this.score >= 100 && lastFrameUpdate + 200 < this.noOfFrames){
+        this.runSpeed = this.runSpeed-1;
+        this.lastFrameUpdate = this.noOfFrames;
+    }
 
     // Spawning new cacti
-    //Case 1: There are no cacti on the screen
+    // Case 1: There are no cacti on the screen
     if(this.cacti.length == 0){
         //Spawn a cactus with high probability
         this.spawnCactus(0.5);
