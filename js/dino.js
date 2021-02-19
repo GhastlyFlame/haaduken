@@ -113,7 +113,7 @@ Game.prototype.update = function () {
     }
     if (document.spacePressed == true && bottomWall(this.dino) >= topWall(this.divider)) {
         console.log("Conditions met");
-        console.log(this.runSpeed);
+        //console.log(this.runSpeed);
         this.dino.jump();
     }
     this.dino.update(this.divider, this.gravity);
@@ -125,7 +125,9 @@ Game.prototype.update = function () {
 
     // Speeds the game up as you get further
     if(this.score % 100 == 0 && this.score >= 100 && this.lastFrameUpdate + 200 < this.noOfFrames){
+        console.log(this.runSpeed);
         this.runSpeed = this.runSpeed-1;
+        console.log(this.runSpeed);
         this.lastFrameUpdate = this.noOfFrames;
     }
 
