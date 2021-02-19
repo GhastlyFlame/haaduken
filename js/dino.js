@@ -124,7 +124,7 @@ Game.prototype.update = function () {
     }
 
     // Speeds the game up as you get further
-    if(this.score % 100 == 0 && this.score >= 100 && lastFrameUpdate + 200 < this.noOfFrames){
+    if(this.score % 100 == 0 && this.score >= 100 && this.lastFrameUpdate + 200 < this.noOfFrames){
         this.runSpeed = this.runSpeed-1;
         this.lastFrameUpdate = this.noOfFrames;
     }
