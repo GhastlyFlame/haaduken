@@ -12,7 +12,7 @@ body {
     
     #mode-wrapper {
     color: #000000;
-    font-family: Verdana, arial, helvetica, sans-serif;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
     font-size: 14px;
     
     }
@@ -28,7 +28,7 @@ body {
     }
     
     .snake-pause-screen {
-    font-family: Verdana, arial, helvetica, sans-serif;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
     font-size: 14px;
     position:absolute;
     width:300px;
@@ -45,7 +45,7 @@ body {
     
     .snake-panel-component {
     position: absolute;
-    font-family: Verdana, arial, helvetica, sans-serif;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
     font-size: 14px;
     color: #000000;
     text-align: center;
@@ -102,7 +102,7 @@ body {
     margin: 0px;
     background-color: #000000;
     color: #00ff11;
-    font-family: Verdana, arial, helvetica, sans-serif;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
     font-size: 14px;
     position: absolute;
     top: 50%;
@@ -120,7 +120,7 @@ body {
     margin: 0px;
     background-color: #000000;
     color: #ff0000;
-    font-family: Verdana, arial, helvetica, sans-serif;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
     font-size: 14px;
     position: absolute;
     top: 50%;
@@ -132,27 +132,28 @@ body {
     text-align: center;
     display: none;
     }
+
     .topnav {
-        overflow: hidden;
-        background-color: black;
-        }
-        
-        .topnav a {
-        float: left;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        }
-        
-        .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-        }
-        
-        .topnav a.active {
-        background-color: #4CAF50;
-        color: white;
-        } 
+    overflow: hidden;
+    background-color: black;
+    }
+    
+    .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+    
+    .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+    
+    .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+    } 
         
