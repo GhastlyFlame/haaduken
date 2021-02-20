@@ -73,7 +73,7 @@ body {
     .snake-food-block {
     margin: 0px;
     padding: 0px;
-    background-color: #FF0000;
+    background-color: #FFFF00;
     border: 0px solid #000080;
     position: absolute;
     background-image: url("./images/matrix-food-block.png")
