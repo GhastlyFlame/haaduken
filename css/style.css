@@ -7,16 +7,16 @@ body {
 }
 
 a:link {
-             color: green;
-             background-color: transparent;
-            text-decoration: none;
-    }
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
 
 a:visited {
-            color: green;
-            background-color: transparent;
-            text-decoration: none;
-    }
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
 
 .topnav {
 overflow: hidden;
@@ -27,9 +27,14 @@ background-color: black;
 float: left;
 color: #f2f2f2;
 text-align: center;
-padding: 14px 16px;
+padding: 14px 20px;
 text-decoration: none;
-font-size: 17px;
+/* font-size: 17px; */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
 }
 
 .topnav a:hover {
@@ -41,3 +46,17 @@ color: black;
 background-color: #4CAF50;
 color: white;
 } 
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
